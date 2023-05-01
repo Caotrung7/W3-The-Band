@@ -1,146 +1,255 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
+  <!--<script type="text/javascript" src='main.js'></script>
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <title>THE BAND</title>
+  <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon" />
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/fonts/themify-icons.css">
 
-  <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <div class="relative overflow-hidden bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-        <svg class="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
+  <div id="main">
+    <div id="header">
+      <!-- BEGIN NAV -->
+      <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#band">Bank</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="">
+          More
+          <i class="nav-arrow-down ti-angle-down"></i>
+        </a>
+          <ul class="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- END NAV -->
 
-        <div>
-          <div class="relative px-4 pt-6 sm:px-6 lg:px-8">
-            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-              <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
-                <div class="flex w-full items-center justify-between md:w-auto">
-                  <a href="#">
-                    <span class="sr-only">Your Company</span>
-                    <img alt="Your Company" class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600">
-                  </a>
-                  <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                      <span class="sr-only">Open main menu</span>
-                      <!-- Heroicon name: outline/bars-3 -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+      <!-- BEGIN: SEARCH BUTTON -->
+      <div class="search-btn">
+        <i class="search-icon ti-search"></i>
+      </div>
+      <!-- END: SEARCH BUTTON -->
+    </div>
 
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+    <div id="slider">
+      <div class="text-content">
+        <h2 class="text-heading">New York</h2>
+        <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+      </div>
 
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+    </div>
 
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+    <div id="content">
+      <!--ABOUT SECTION-->
+      <div id="band" class="content-section">
+        <h2 class="section-heading"> THE BAND</h2>
+        <p class="section-sub-heading">We love music</p>
+        <p class="about-text">
+          We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
 
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
-              </div>
-            </nav>
+        <div class="row members-list">
+          <div class="col col-third text-center">
+            <p class="member-name">Name</p>
+            <img src="/img/band/member1.jpg" alt="Name" class="member-img">
           </div>
 
-          <!--
-            Mobile menu, show/hide based on menu open state.
+          <div class="col col-third text-center">
+            <p class="member-name">Name</p>
+            <img src="/img/band/member1.jpg" alt="Name" class="member-img">
+          </div>
 
-            Entering: "duration-150 ease-out"
-              From: "opacity-0 scale-95"
-              To: "opacity-100 scale-100"
-            Leaving: "duration-100 ease-in"
-              From: "opacity-100 scale-100"
-              To: "opacity-0 scale-95"
-          -->
-          <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-            <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
-              <div class="flex items-center justify-between px-5 pt-4">
-                <div>
-                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <div class="col col-third text-center">
+            <p class="member-name">Name</p>
+            <img src="/img/band/member1.jpg" alt="Name" class="member-img">
+          </div>
+        </div>
+      </div>
+
+        <!--TOUR SECTION-->
+        <div id="tour" class="tour-section">
+          <!-- TOUR DADTES -->
+          <div class="content-section">
+            <h2 class="section-heading text-white"> TOUR DATES</h2>
+            <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+
+            <!-- TICKETS -->
+            <ul class="tickets-list">
+              <li>September <span class="sold-out">Sold out</span></li>
+              <li>October <span class="sold-out">Sold out</span></li>
+              <li>November <span class="quantity">3</span></li>
+            </ul>
+            <!-- PLACES -->
+            <div class="row place-list">
+              <div class="col col-third">
+                <img src="./img/places/place1.jpg" alt="New York" class="place-img">
+                <div class="place-body">
+                  <h3 class="place-heading">New York</h3>
+                  <p class="place-time">Fri 27 Nov 2016</p>
+                  <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <button class="btn js-buy-ticket">Buy Tickets</button>
                 </div>
-                <div class="-mr-2">
-                  <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span class="sr-only">Close main menu</span>
-                    <!-- Heroicon name: outline/x-mark -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+                </div>
+
+                <div class="col col-third">
+                  <img src="./img/places/place2.jpg" alt="Paris" class="place-img">
+                  <div class="place-body">
+                    <h3 class="place-heading">Paris</h3>
+                    <p class="place-time">Sat 28 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="btn js-buy-ticket">Buy Tickets</button>
+                  </div>
+                </div>
+
+              <div class="col col-third">
+                    <img src="./img/places/place3.jpg" alt="San Francisco" class="place-img">
+                    <div class="place-body">
+                      <h3 class="place-heading">San Francisco</h3>
+                      <p class="place-time">Sun 29 Nov 2016</p>
+                      <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <button class="btn js-buy-ticket">Buy Tickets</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- BEGIN: CONTACT SECTION-->
+        <div id="contact" class="content-section">
+          <h2 class="section-heading"> CONTACT</h2>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+
+          <div class="row contact-content">
+            <div class="col col-half contact-info">
+              <p><i class="ti-location-pin"></i>Chicago, US</p>
+              <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+              <p><i class="ti-email"></i>Email: mail@mail.com</p>
+
+            </div>
+            <div class="col col-half contact-form">
+              <form action="">
+              <div class="row">
+                <div class="col col-half">
+                  <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                </div>
+                <div class="col col-half">
+                  <input type="email" name="" placeholder="Email" required id="" class="form-control">
                 </div>
               </div>
-              <div class="space-y-1 px-2 pt-2 pb-3">
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Product</a>
-
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Features</a>
-
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Marketplace</a>
-
-                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Company</a>
+              <div class="row mt-8">
+                <div class="col col-full">
+                  <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                </div>
               </div>
-              <a href="#" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
+                <input class="btn pull-right mt-16" type="submit" value="SEND">
+              </form>
             </div>
           </div>
         </div>
-
-        <main class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-          <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span class="block xl:inline">Data to enrich your</span>
-              <span class="block text-indigo-600 xl:inline">online business</span>
-            </h1>
-            <p class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div class="rounded-md shadow">
-                <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">Get started</a>
-              </div>
-              <div class="mt-3 sm:mt-0 sm:ml-3">
-                <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">Live demo</a>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+      <!-- END: CONTACT SECTION-->
+        <div class="map-section">
+          <img src="./img/map/map.jpg" alt="map">
+        </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
+<!-- FOOTER -->
+    <div id="footer">
+      <div class="socials-list">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+        <a href=""><i class="ti-twitter"></i></a>
+        <a href=""><i class="ti-linkedin"></i></a>
+        <a href=""><i class="ti-youtube"></i></a>
+      </div>
+      <p class="copy-right">Powered by <a href="">w3.css</a></p>
     </div>
   </div>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<div class="modal js-modal">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+
+  <div class="modal-container js-modal-container">
+
+    <div class="modal-close js-modal-close">
+      <i class="ti-close"></i>
+    </div>
+
+    <header class="modal-header">
+      <i class="modal-header-icon ti-bag"></i>
+         Tickets
+    </header>
+
+    <div class="modal-body">
+      <label for="tickets-quantity" class="modal-label">
+        <i class="ti-shopping-cart"></i>
+        Tickets, $15 per person
+      </label>
+      <input id="tickets-quantity" class="modal-input" placeholder="How many?">
+
+      <label for="tickets-email" class="modal-label">
+        <i class="ti-user"></i>
+        Sent to
+      </label>
+      <input id="tickets-email" class="modal-input" placeholder="Enter email">
+
+      <button id="buy-tickets">
+        Pay <i class="ti-check"></i>
+      </button>
+    </div>
+
+    <footer class="modal-footer">
+      <p class="modal-help">Need <a href="">Help?</a></p>
+
+    </footer>
+
+  </div>
+
+</div>
+
+<script>
+  const buyBtns = document.querySelectorAll(".js-buy-ticket")
+  const modal = document.querySelector(".js-modal")
+  const modalContainer = document.querySelector(".js-modal-container")
+  const modalClose = document.querySelector(".js-modal-close")
+
+  function showBuyTickets() {
+    modal.classList.add("open")
+  }
+
+  function hiddenBuyTickets() {
+    modal.classList.remove("open")
+  }
+
+  for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener("click", showBuyTickets)
+  }
+
+  modalClose.addEventListener("click", hiddenBuyTickets)
+
+  modal.addEventListener("click", hiddenBuyTickets)
+
+  modalContainer.addEventListener("click", function (event) {
+    event.stopPropagation()
+  })
+
+</script>
+
+
+ </body>
 
 </html>
+
+
+
