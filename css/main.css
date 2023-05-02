@@ -56,6 +56,10 @@ html {
   margin-top: 16px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 .row {
   margin-left: -8px;
   margin-right: -8px;
@@ -117,6 +121,14 @@ html {
   z-index: 1;
 }
 
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 21px;
@@ -127,6 +139,15 @@ html {
   cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+  color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
   color: #fff;
   font-size: 20px;
@@ -164,7 +185,7 @@ html {
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
-  display: inline-block;
+  display: block;
 }
 
 #nav li:hover .subnav{
@@ -261,9 +282,13 @@ html {
 
 #content .content-section {
   width: 800px;
-  padding: 64px 0px 112px;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
+  /*RESPONSIVE FOR IPad*/
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .member-name {
@@ -278,7 +303,7 @@ html {
 }
 
 #content .members-list {
-  margin-top: 47px;
+  margin-top: 32px;
 }
 
 
@@ -318,7 +343,7 @@ html {
 /*PLACE*/
 
 .place-list{
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-img{
