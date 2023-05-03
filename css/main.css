@@ -99,6 +99,7 @@ html {
   margin-top: 15px;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .pull-right {
@@ -224,7 +225,7 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
-  background: url("/img/slider/slider1.jpg") top center / cover no-repeat;
+  background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
   /* SHORTHAND: BACKGROUND IMAGE - POSITION/ - SIZE - REPEAT*/
 }
 
@@ -247,6 +248,7 @@ html {
   font-weight: bolder;
   font-size: 15px;
   margin-top: 25px;
+  text-shadow: 0 0 1px #000;
 }
 
 #content{
@@ -394,6 +396,16 @@ html {
   width: 30px;
   display: inline-block;
 }
+
+.contact-info a {
+  color: #0000ef;
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1;
+}
+
 
 .contact-form {
   font-size: 15px;
